@@ -1,0 +1,14 @@
+<html>
+    <head>
+        <script src="https://cdn.ably.com/lib/ably.min-1.js"></script>
+    </head>
+    <body>
+        <script>
+        const ably = new Ably.Realtime('fNpv_g.OLqV0w:udFXDzCOG8bZrKK_6xe1OqMICMVzL-vHW8Ualswmwvw');
+        ably.connection.on('connected', () => {
+          alert('Connected to Ably!');
+        });
+        </script>
+        
+    </body>
+</html>
