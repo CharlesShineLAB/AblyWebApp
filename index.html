@@ -1,15 +1,38 @@
-<html>
-    <head>
-        <script src="https://cdn.ably.com/lib/ably.min-1.js"></script>
-    </head>
-    <body>
-        <script>
-        const ably = new Ably.Realtime('fNpv_g.OLqV0w:udFXDzCOG8bZrKK_6xe1OqMICMVzL-vHW8Ualswmwvw');
-        ably.connection.on('connected', () => {
-          alert('Connected to Ably!');
-        });
-        </script>
-        
-    </body>
-    
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Ably Web SDK Test</title>
+    <script src="https://cdn.ably.com/lib/ably.min-1.js"></script>
+
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/Header-Blue.css">
+    <link rel="stylesheet" href="assets/css/Navigation-Clean.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+
+</head>
+
+<body>
+    <nav class="navbar navbar-light navbar-expand-md navigation-clean" style="height: 64px;background: var(--bs-indigo);text-align: left;">
+        <div class="container">
+            <h2 style="color: var(--bs-white);text-align: center;margin: 0px;margin-bottom: 0px;width: 281.672px;height: 38px;margin-left: -274px;">Ably Web SDK 测试</h2>
+        </div>
+    </nav>
+    <div class="container" style="background: rgba(255,165,0,0);max-width: 100%;border-color: rgba(33,37,41,0);border-top-color: rgb(33,;border-right-color: 37,;border-bottom-color: 41);border-left-color: 37,;">
+        <textarea id="MsgSend" style="width: 46%;height: 500px;margin: 20px;margin-top: 20px;margin-bottom: 24px;margin-right: 20px;border-radius: 8px;border-color: var(--bs-gray-500);border-top-color: rgb(0,;border-right-color: 0,;border-bottom-color: 0);border-left-color: 0,;max-width: 50%-5;margin-left: 20px;text-align: left"></textarea>
+        <textarea id="MsgReciv" style="width: 46%;height: 500px;margin: 20px;margin-top: 20px;margin-bottom: 20px;margin-right: 20px;margin-left: 88px;text-align: left;border-radius: 8px;border-color: var(--bs-secondary);border-top-color: rgb(0,;border-right-color: var(--bs-gray-900);border-bottom-color: 0);border-left-color: 0,;background: var(--bs-gray-600);" text-aligin="left" readonly="true"></textarea>
+    </div>
+    <div class="container" style="background: rgba(255,165,0,0);max-width: 100%;">
+        <input id="MsgInput" type="text" style="width: 46%;margin: 20px;margin-left: 20px;margin-top: 0px;height: 32px;">
+        <input id="MsgDisplay" type="text" style="width: 46%;margin: 20px;margin-left: 88px;margin-top: 0px;height: 32px;background: var(--bs-gray-600);color: var(--bs-white);border-radius: 5px;text-align: left;" readonly="true">
+    </div>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script src="./main.js"></script>
+
+ 
+</body>
+
 </html>
